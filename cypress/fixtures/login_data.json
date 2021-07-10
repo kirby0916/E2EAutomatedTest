@@ -1,0 +1,10 @@
+{
+    "validCredentials":{
+        "username": "valid@test.com",
+        "password": "U2FsdGVkX18bgHy9ZjIcSJs9EY+sBNw9yNb0pFby6ik="
+    },
+    "invalidCredentials":{
+        "username": "invalid@test.com",
+        "password": "U2FsdGVkX18bgHy9ZjIcSJs9EY+sBNw9yNb0pFby6ik="
+    }
+}

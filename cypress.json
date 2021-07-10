@@ -1,0 +1,7 @@
+{
+    "baseUrl":"https://dev-trackimpact.org",
+    "execTimeout":420000,
+    "pageLoadTimeout":420000,
+    "taskTimeout":420000
+
+}

@@ -1,0 +1,18 @@
+{
+  "name": "e2eautomatedtest",
+  "version": "1.0.0",
+  "description": "test automation created in mocha and cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/cypress open"
+  },
+  "author": "jose mari limon",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^7.7.0"
+  },
+  "dependencies": {
+    "crypto-js": "^4.0.0",
+    "dotenv": "^10.0.0"
+  }
+}
