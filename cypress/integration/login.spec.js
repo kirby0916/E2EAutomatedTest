@@ -15,16 +15,15 @@ describe('Logging in user', () => {
   describe('using valid credentials',()=>{
     it('should be able to successfull logged in and directed to dashboard page', () => {
       cy.get(loginPage.usernameField).type(datax.invalidCredentials.username);
-      cy.get(loginPage.passwordField).type(crypt.decrypt(datax.invalidCredentials.password));
+      cy.get(loginPage.passwordField).type(crypt.decrypt(datax.invalidCredentials.password),{sensitive:true});
       cy.get(loginPage.signInButton).click();
       cy.log('This is just a sample and Assuming that the dashboard validation has been added');
     })
-    
   });
   describe('using invalid credential',()=>{
     it('should return Invalid username and Password message', () => {
       cy.get(loginPage.usernameField).type(datax.invalidCredentials.username);
-      cy.get(loginPage.passwordField).type(crypt.decrypt(datax.invalidCredentials.password));
+      cy.get(loginPage.passwordField).type(crypt.decrypt(datax.invalidCredentials.password),{sensitive:true});
       cy.get(loginPage.signInButton).click();
       cy.get(loginPage.signInMessage).should(($signInMessage)=>{
         expect($signInMessage).to.contain('Incorrect username or password.');
